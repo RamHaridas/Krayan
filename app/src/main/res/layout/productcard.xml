@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:id="@+id/productrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/productiv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:contentDescription="Product image" />
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/productiv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            />
+        <TextView
+            android:id="@+id/productcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cost"
+            android:layout_below="@id/productiv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:id="@+id/productstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="in stock"
+            android:layout_below="@+id/productname"
+            android:layout_alignParentStart="true"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

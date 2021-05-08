@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/offWhite"
+    tools:context=".ui.dashboard.QueryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn't find what you were looking for?"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#000"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/head2"
+        android:layout_margin="8dp"
+        android:text="Tell us about it"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_below="@+id/head"/>
+    <TextView
+        android:id="@+id/head3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/head2"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="We'll make it available for you!"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pname"
+        android:layout_below="@+id/head3"
+        android:layout_margin="8dp"
+        android:hint="Product Name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/pname_et"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pdesc"
+        android:layout_below="@+id/pname"
+        android:layout_margin="8dp"
+        android:hint="Description (Optional)"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pdesc_et"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="100dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/krayan_contact_us"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        android:layout_above="@+id/send"
+        android:layout_below="@+id/pdesc"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_margin="10dp"
+        android:id="@+id/send"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

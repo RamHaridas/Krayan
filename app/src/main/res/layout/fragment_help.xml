@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/offWhite"
+    tools:context=".ui.profile.HelpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/holo_orange_dark"
+            android:fontFamily="@font/ubuntu"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textSize="15sp"
+            android:text="We are more than happy to help you!"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/ocean_logo"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/top"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/helpline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HELPLINE NUMBERS"
+            android:layout_below="@+id/ocean_logo"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/helpline"
+            android:textSize="15sp"
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:id="@+id/apeksha"
+            android:text="+91 84215 55665"
+            android:textAlignment="center"
+            android:drawableStart="@drawable/ic_help_call" />
+        <TextView
+            android:id="@+id/lokesh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apeksha"
+            android:textSize="15sp"
+            android:layout_margin="8dp"
+            android:text="+91 93254 37367"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_help_call"/>
+        <TextView
+            android:id="@+id/makrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lokesh"
+            android:textSize="15sp"
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:text="+91 78882 72768"
+            android:textAlignment="center"
+            android:drawableStart="@drawable/ic_help_call"/>
+        <TextView
+            android:id="@+id/nupur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/makrand"
+            android:textSize="15sp"
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:text="+91 95612 58262"
+            android:textAlignment="center"
+            android:drawableStart="@drawable/ic_help_call"/>
+        <TextView
+            android:id="@+id/varun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nupur"
+            android:textSize="15sp"
+            android:layout_margin="8dp"
+            android:text="+91 77209 03876"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_help_call"/>
+        <TextView
+            android:id="@+id/help_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_help_email"
+            android:text="Need Help?"
+            android:textSize="25sp"
+            android:layout_margin="12dp"
+            android:layout_below="@+id/varun"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/holo_blue_dark"/>
+        <TextView
+            android:id="@+id/contact_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_alternate_email"
+            android:text="Contact us"
+            android:textSize="25sp"
+            android:layout_margin="12dp"
+            android:layout_below="@+id/help_email"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/holo_blue_dark"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/help_anim"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/krayan_aboutpage_help"
+            app:lottie_autoPlay="true"
+            android:layout_below="@id/contact_mail"
+            app:lottie_loop="false"/>
+    </RelativeLayout>
+
+</ScrollView>
