@@ -10,4 +10,4 @@
 ![alt text](https://play-lh.googleusercontent.com/bWV0whUUI40Gtj938RFRY73ox7V0yEq0vdiMgjhqL_6DYTFENCWjZQWXuqxHxtOQKA=w1440-h620)
 
 ![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkM5Hyeoq0fVhQTS3WZ6UIgfQpMnP947jfEKS_z7owj2hLHavRHaT01vS8o0iVMwTxQ&usqp=CAU)
-![Play Store Link](https://play.google.com/store/apps/details?id=com.oceanservices.krayan)
+[Play Store Link](https://play.google.com/store/apps/details?id=com.oceanservices.krayan)
